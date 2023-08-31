@@ -45,6 +45,11 @@ public class Movement : MonoBehaviour
 
     private float jumpCooldownTimer = 0.0f;
 
+     void Start()
+    {
+        rb = GetComponent<Rigidbody>();
+    }
+
 
     void Update()
     {
