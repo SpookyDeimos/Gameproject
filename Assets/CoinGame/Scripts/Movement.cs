@@ -8,17 +8,35 @@ public class Movement : MonoBehaviour
     /// <summary>
     /// Walking speed of the character.
     /// </summary>
-    public float walkSpeed = 2.0f;
+    private float walkSpeed = 3.0f;
+
+    public float WalkSpeed
+    {
+        get { return walkSpeed; }
+        set { walkSpeed = value; }
+    }
 
     /// <summary>
     /// Running speed of the character.
     /// </summary>
-    public float runSpeed = 5.0f;
+    private float runSpeed = 5.0f;
+
+    public float RunSpeed
+    {
+        get { return runSpeed;} 
+        set { runSpeed = value; }
+    }
 
     /// <summary>
     /// Jump force applied to the character.
     /// </summary>
-    public float jumpForce = 5.0f;
+    private float jumpForce = 10.0f;
+
+    public float JumpForce
+     {
+        get { return jumpForce;} 
+        set { jumpForce = value; }
+    }
 
     /// <summary>
     /// Transform used for checking if the character is grounded.
@@ -41,9 +59,17 @@ public class Movement : MonoBehaviour
     /// <summary>
     /// Cooldown time (in seconds) between jumps.
     /// </summary>
-    public float jumpCooldown = 2.0f;
+    private float jumpCooldown = 2.0f;
+
+    public float JumpCooldown
+    {
+        get { return jumpCooldown;} 
+        set { jumpCooldown = value; }
+    }
+
 
     private float jumpCooldownTimer = 0.0f;
+    
 
      void Start()
     {
